@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -115,7 +114,6 @@ void carregar_grafo_matriz(const char* nome_arquivo, GrafoMatrizAdjacencia* graf
     fclose(arquivo); // Fecha o arquivo
 }
 
-// Função para converter uma matriz de adjacência em lista de adjacência sem duplicar arestas
 void converter_matriz_para_lista(GrafoMatrizAdjacencia* grafo_matriz, GrafoListaAdjacencia* grafo_lista) {
     inicializarGrafoLista(grafo_lista, grafo_matriz->num_vertices); // Inicializa a lista de adjacência
 
